@@ -16,6 +16,8 @@
                     key={category.value} 
                     label={category.label} 
                     type="checkbox" 
+                    data-name="category"
+                    data-value={category.value}
                     checked 
                     onchange={handleCheckbox}>
                     </lightning-input>
@@ -34,7 +36,8 @@
                     key={make.value} 
                     label={make.label} 
                     type="checkbox" 
-                    name="makeType"
+                    data-name="makeType"
+                    data-value={make.value}
                     checked 
                     onchange={handleCheckbox}>
                     </lightning-input>
